@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <button data-testid='app-container'>Hello</button>
+    <div data-testid='app-container' className='app-container'></div>
   )
 }
 

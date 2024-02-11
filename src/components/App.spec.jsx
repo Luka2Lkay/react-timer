@@ -1,11 +1,12 @@
 import { describe, it, expect } from "vitest";
 import {render, screen} from "@testing-library/react"
 import App from "./App";
+import Timer from "./Timer"
 
 describe("App", () => {
-  it("should render the App component", () => {
+  it("should render a single container", () => {
     render(<App />)
 
-    expect(screen.getByTestId('app-container')).toHaveTextContent('Hello')
+    expect(screen.getAllByTestId('app-container').length).toBe(1)
   });
 });
