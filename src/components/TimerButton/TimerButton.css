@@ -1,0 +1,11 @@
+.button-container {
+    text-align: center;
+    margin: 0px 20px;
+    border: var(--button-border);
+    font-size: var(--button-text-size);
+    background-color: var(--button-background-color)
+  }
+  
+  .button-container:hover {
+    cursor: pointer;
+  }
